@@ -144,6 +144,10 @@ section.sessao1 .container{
 	border-radius: 30px;
 	font-size: 13px;
 }
+.btn1-texto a{
+	text-decoration: none;
+	color: white;
+}
 .device-sessao1{
 	float: left;
 	width: 35%;
@@ -204,6 +208,10 @@ section.sessao1 .container{
 	line-height: 44px;
 	border-radius: 30px;
 	font-size: 15px;
+}
+.btn2-texto a{
+	text-decoration: none;
+	color: white;
 }
 .contato{
 	width: 100%;

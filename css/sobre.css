@@ -183,6 +183,10 @@ html,body{
 	border-radius: 30px;
 	font-size: 15px;
 }
+.btn1-texto a{
+	text-decoration: none;
+	color: white;
+}
 .usuario2{
 	position: relative;
 	top: -150px;
