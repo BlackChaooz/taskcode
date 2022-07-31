@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="keywords" content="palavras,separadas,por,vírgulas">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+	<title>task.code | Solutions</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header>
+		<div class="topo">
+			<nav class="menu-desktop">
+			<ul>
+				<li><a href="index.html">Inicio</a></li>
+    			<li><a href="sobre.html">Projetos</a></li>
+ 			</ul>
+			</nav><!--menu-desktop-->
+
+			<!--<nav class="menu-mobile">
+				
+				<ul class="lista-menu">
+					<li><a href="index.html">Inicio</a></li>
+	    			<li><a href="sobre.html">Participantes</a></li>
+	 			</ul>
+	 			
+			</nav>-->
+				
+		</div><!--topo-->
+	</header>
+	<div class="perfil-detalhes">
+			<h2>Seja Bem-Vindo!</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pretium ex ut mauris efficitur, a mattis elit euismod. Sed eget mi purus. Vivamus neque orci, commodo vulputate bibendum eget, vestibulum vel nisi. Etiam maximus leo lacinia dignissim aliquet. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam hendrerit urna eget arcu pellentesque, id blandit ex finibus. Ut diam risus, pellentesque ac magna cursus, ullamcorper condimentum tellus.</p>
+		</div><!--perfil-detalhes-->
+	<div class="lista">
+			<ul class="lista1 item1">
+				<div class="borda-img">
+					<img src="img/site.png">
+				</div><!--borda-img-->
+				<li>Sites</li>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum, enim a sollicitudin sodales, nunc diam tempus diam, sit amet suscipit orci tortor ut massa </p>
+			</ul>
+			<ul class="lista1 item2">
+				<div class="borda-img">
+					<img src="img/hospedagem.png">
+				</div><!--borda-img-->
+				<li>Hospedagem</li>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum, enim a sollicitudin sodales, nunc diam tempus diam, sit amet suscipit orci tortor ut massa</p>
+			</ul>
+			<ul class="lista1 item3">
+				<div class="borda-img">
+					<img src="img/ferramenta.png">
+				</div><!--borda-img-->
+				<li>Manutenção</li>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum, enim a sollicitudin sodales, nunc diam tempus diam, sit amet suscipit orci tortor ut massa </p>
+			</ul>
+		</div><!--lista-->
+		<!--<div class="teste">
+			
+		</div>-->
+		<section class="sessao1">
+		<div class="container">
+			<div class="texto-sessao1">
+				<h2>Desenvolvemos Sistemas Únicos</h2>
+				<p>Design totalmente responsivo para qualquer tela, e aparelho!</p>
+				<ul>
+					<li>Sites</li>
+					<li>Lojas Virtuais</li>
+					<li>Sistemas</li>
+				</ul>
+				<div class="clear"></div><!--clear-->
+				<div class="btn1-texto">Saiba mais</div><!--btn1-texto-->
+			</div><!--texto-sessao1-->
+			<div class="device-sessao1"></div><!--decive-sessao1-->
+			<div class="clear"></div><!--clear-->
+		</div><!--container-->
+	</section><!--sessao1-->
+	<div class="conheca">
+		<h2>Confira agora alguns dos Nossos Projetos:</h2>
+	</div>
+	<div class="slide">
+		<div id="slideshow" class="foto1">
+					<img class="active" src="img/exem1.jpg">
+					<!--<img src="img/exem3.png">-->
+					<img src="img/exem2.png">
+					<img src="img/exem4.png">
+		</div><!--foto1-->
+
+	</div><!--slide-->
+	<div class="btn2-texto">Visualizar Projetos</div><!--btn1-texto-->
+	<section class="contato">
+				<div class="form">
+					<form>
+						<h2>Tire suas dúvidas</h2>
+						 <label><p>Nome</p></label>
+						 <input type="text" name="Nome" placeholder="Nome">
+						 <label>Sobrenome</label>
+						 <input type="text" name="Sobrenome" placeholder="Sobrenome">
+						 <label>E-mail</label>
+						 <input type="text" name="E-mail" placeholder="E-mail">
+						 <textarea placeholder="Mensagem"></textarea>
+						 <input type="submit" name="">
+					</form>	
+				</div><!--form-->
+				<div class="lista2">
+					<ul>
+						<h2>Entre em Contato</h2>
+						<li><img src="img/instagram.png"> <p>@taskcodesolutions</p></li>
+						<li><img src="img/gmail.png"> <p>taskcodesolution@gmail.com</p></li>
+						<li><img src="img/whatsapp.png"> <p>(81)98609-2083</p><p>(81)98940-9724</p></li>
+					</ul>
+				</div><!--lista-->
+			</section><!--contato-->
+			<footer>
+		
+				<p>Todos os Direitos Reservados | taskcodesolution@gmail.com</p>
+			</footer>
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	function slideSwitch() {
+    var $active = $('#slideshow img.active');
+
+	$active.addClass('last-active');
+
+	// verifica se existe um próximo objeto na div #slideshow, caso ele nao exista, retorna para o primeiro
+    var $next =  $active.next().length ? $active.next() : $('#slideshow img:first');
+
+	// Codigo que define as transicoes entre as imagens
+    $next.css({opacity: 0.0})
+        .addClass('active')
+        .animate({opacity: 1.0}, 1000, function() {
+            $active.removeClass('active last-active');
+        });
+}
+
+$(function() {
+	//Executa a função a cada 5 segundos
+	setInterval( "slideSwitch()", 3000 );
+});
+</script>
+</body>
+</html>
