@@ -1,5 +1,5 @@
 *{
-	margin: 0;
+	margin: auto;
 	padding: 0;
 	box-sizing: border-box;
 }
@@ -198,7 +198,7 @@ html,body{
 }
 .usuario-foto2{
 	display: inline-block;
-	/*background-image: url('../img/jhonnatas.jpg');*/
+	background-image: url('../img/perfil.png');
 	background-size: 100%;
 	background-repeat: no-repeat;
 	width: 300px;
